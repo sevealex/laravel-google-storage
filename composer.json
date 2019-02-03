@@ -10,8 +10,8 @@
 	],
 	"require": {
 		"php": ">=5.5.0",
-    "illuminate/filesystem": "^5.1|^5.2|^5.3"
-    "superbalist/flysystem-google-storage": ">=3.0 <8.0"
+    		"illuminate/filesystem": "^5.1|^5.2|^5.3",
+    		"superbalist/flysystem-google-storage": ">=3.0 <8.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
