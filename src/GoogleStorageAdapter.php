@@ -13,7 +13,7 @@ class GoogleStorageAdapter extends \Superbalist\Flysystem\GoogleStorage\GoogleSt
      * @param  array $options
      * @return string
      */
-    public function getAwsTemporaryUrl($path, $expiration, $options)
+    public function getTemporaryUrl($path, $expiration)
     {
         $client = $this->getObject($path);
 
