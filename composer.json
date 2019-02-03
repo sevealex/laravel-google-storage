@@ -1,0 +1,33 @@
+{
+	"name": "sevealex/laravel-google-storage",
+	"description": "Laravel Flysystem adapter for Google Cloud Storage",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Seve",
+			"email": "seve_alecks@yahoo.com"
+		}
+	],
+	"require": {
+		"php": ">=5.5.0",
+    "illuminate/filesystem": "^5.1|^5.2|^5.3"
+    "superbalist/flysystem-google-storage": ">=3.0 <8.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"mockery/mockery": "0.9.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"SeveAles\\LaravelGoogleStorage\\": "src/"
+		}
+	},
+	"config": {
+		"bin-dir": "bin"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	}
+}
