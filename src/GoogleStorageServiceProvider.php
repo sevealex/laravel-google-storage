@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Cached\CachedAdapter;
 use League\Flysystem\Filesystem;
-use GoogleStorageAdapter;
+use Severin\LaravelGoogleStorage\GoogleStorageAdapter;
 
 class GoogleStorageServiceProvider extends ServiceProvider
 {

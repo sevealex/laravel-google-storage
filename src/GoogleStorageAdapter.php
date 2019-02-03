@@ -13,17 +13,10 @@ class GoogleStorageAdapter extends \Superbalist\Flysystem\GoogleStorage\GoogleSt
      * @param  array $options
      * @return string
      */
-    public function getAwsTemporaryUrl($adapter, $path, $expiration, $options)
+    public function getAwsTemporaryUrl($path, $expiration, $options)
     {
-        $client = $adapter->getClient();
+        $client = $this->getObject($path);
 
-        $command = $client->getCommand('GetObject', array_merge([
-            'Bucket' => $adapter->getBucket(),
-            'Key' => $adapter->getPathPrefix().$path,
-        ], $options));
-
-        return (string) $client->createPresignedRequest(
-            $command, $expiration
-        )->getUri();
+        return $client->signedUrl($expiration);
     }
 }
